@@ -1,6 +1,7 @@
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.math.BigInteger;
 
 
 /**
@@ -12,19 +13,19 @@ public class LinearFibonacciAlgorithm
     /**
      * calculates fibonacci numbers.
      * @param n the nth fibonacci number to return.
-     * @return a long[]. answer[0] contains the nth fibonacci number.
+     * @return a BigInteger[]. answer[0] contains the nth fibonacci number.
      */
-    public static long[] LinearFibonacci(int n)
+    public static BigInteger[] LinearFibonacci(int n)
     {
         if (n <=1)
         {
-            long[] answer = {n,0};
+            BigInteger[] answer =  {new BigInteger(String.valueOf(n)), new BigInteger("0")};
             return answer;
         }
         else
         {
-            long[] temp = LinearFibonacci(n-1);
-            long[] answer = {temp[0] + temp[1], temp[0]};
+            BigInteger[] temp = LinearFibonacci(n-1);
+            BigInteger[] answer = {temp[0].add(temp[1]), temp[0]};
             return answer;
         }
     }
@@ -42,7 +43,7 @@ public class LinearFibonacciAlgorithm
 
         long linearFibonacciStartTimeNano;
         long linearFibonacciElapsedTimeNano;
-        long[] linearFibonacciResult;
+        BigInteger[] linearFibonacciResult;
 
         PrintWriter outWriter = null;
         FileWriter fileWriter;
@@ -58,7 +59,7 @@ public class LinearFibonacciAlgorithm
         }
 
         int count = 5;
-        while(count <= 100)
+        while(count <= 500)
         {
             linearFibonacciStartTimeMs = System.currentTimeMillis();
             linearFibonacciStartTimeNano = System.nanoTime();
@@ -66,7 +67,7 @@ public class LinearFibonacciAlgorithm
             linearFibonacciElapsedTimeNano = System.nanoTime() - linearFibonacciStartTimeNano;
             linearFibonacciEndTimeMs = System.currentTimeMillis();
             linearFibonacciElapsedTimeMs = linearFibonacciEndTimeMs - linearFibonacciStartTimeMs;
-            outWriter.printf("[LinearFibonacci(%d)]\n\tResult: %d\n\tTime elapsed: %d ns\n\t\t\t\t  %d ms\n\n", count, linearFibonacciResult[0], linearFibonacciElapsedTimeNano, linearFibonacciElapsedTimeMs);
+            outWriter.printf("[LinearFibonacci(%d)]\n\tResult: %d\n\tTime elapsed: %d ns\n\t\t\t%d ms\n\n", count, linearFibonacciResult[0], linearFibonacciElapsedTimeNano, linearFibonacciElapsedTimeMs);
 
             count += 5;
         }
