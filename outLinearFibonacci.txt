@@ -1,0 +1,100 @@
+[LinearFibonacci(5)]
+	Result: 5
+	Time elapsed: 1800 ns
+				  0 ms
+
+[LinearFibonacci(10)]
+	Result: 55
+	Time elapsed: 1200 ns
+				  0 ms
+
+[LinearFibonacci(15)]
+	Result: 610
+	Time elapsed: 1300 ns
+				  0 ms
+
+[LinearFibonacci(20)]
+	Result: 6765
+	Time elapsed: 1700 ns
+				  0 ms
+
+[LinearFibonacci(25)]
+	Result: 75025
+	Time elapsed: 1900 ns
+				  0 ms
+
+[LinearFibonacci(30)]
+	Result: 832040
+	Time elapsed: 2200 ns
+				  0 ms
+
+[LinearFibonacci(35)]
+	Result: 9227465
+	Time elapsed: 4900 ns
+				  0 ms
+
+[LinearFibonacci(40)]
+	Result: 102334155
+	Time elapsed: 4400 ns
+				  0 ms
+
+[LinearFibonacci(45)]
+	Result: 1134903170
+	Time elapsed: 3000 ns
+				  0 ms
+
+[LinearFibonacci(50)]
+	Result: 12586269025
+	Time elapsed: 10100 ns
+				  0 ms
+
+[LinearFibonacci(55)]
+	Result: 139583862445
+	Time elapsed: 3800 ns
+				  0 ms
+
+[LinearFibonacci(60)]
+	Result: 1548008755920
+	Time elapsed: 3800 ns
+				  0 ms
+
+[LinearFibonacci(65)]
+	Result: 17167680177565
+	Time elapsed: 500 ns
+				  0 ms
+
+[LinearFibonacci(70)]
+	Result: 190392490709135
+	Time elapsed: 2000 ns
+				  0 ms
+
+[LinearFibonacci(75)]
+	Result: 2111485077978050
+	Time elapsed: 2700 ns
+				  0 ms
+
+[LinearFibonacci(80)]
+	Result: 23416728348467685
+	Time elapsed: 2800 ns
+				  0 ms
+
+[LinearFibonacci(85)]
+	Result: 259695496911122585
+	Time elapsed: 2400 ns
+				  0 ms
+
+[LinearFibonacci(90)]
+	Result: 2880067194370816120
+	Time elapsed: 600 ns
+				  0 ms
+
+[LinearFibonacci(95)]
+	Result: -4953053512429003327
+	Time elapsed: 2900 ns
+				  0 ms
+
+[LinearFibonacci(100)]
+	Result: 3736710778780434371
+	Time elapsed: 2600 ns
+				  0 ms
+
